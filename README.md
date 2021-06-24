@@ -1,4 +1,4 @@
-# p2_continuous_control
+# Reinforcement Learning: Project 2: Continuous Control 
 This is the DDPG project 2 for Udacity Reinforcement Learning Nano-degree.
 
 ## Description of environment
