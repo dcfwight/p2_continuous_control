@@ -29,7 +29,7 @@ to demonstrate the difficulty of hyper-parameter selection.
 
 After many iterations through different hyperparameters, I completed the task.
 Chart of moving average over 100 episodes is shown here:
-[]("solved.jpg" "Training results")
+[Training results](/solved.png "Training results")
 
 ## Notes on training
 * The training took many iterations, cycling through different hyper-parameters
