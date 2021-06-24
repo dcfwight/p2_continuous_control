@@ -16,3 +16,14 @@ I plan on using an Actor-critic DDPG model ("Deep Deterministic Policy Gradient"
 ## Starting point
 I started off using the [DDPG pendulum]('https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-pendulum') code from Udacity as a starting point
 
+## Results
+You can see the results in two ways:
+1. Run the Jupyter notebook - 'Continous_control_2.ipynb'
+1. Read through the PDF of the completed Jupyter notebook - 'Continuous_control_2.pdf'
+
+After many iterations through different hyperparameters, I completed the task.
+Chart of moving average over 100 episodes is shown here:
+![Training results](/solved.jpg "Training results")
+
+# Notes on 
+
