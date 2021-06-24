@@ -18,12 +18,37 @@ I started off using the [DDPG pendulum]('https://github.com/udacity/deep-reinfor
 
 ## Results
 You can see the results in two ways:
-1. Run the Jupyter notebook - 'Continous_control_2.ipynb'
+1. Run the Jupyter notebook - 'Continous_control_2.ipynb'.
 1. Read through the PDF of the completed Jupyter notebook - 'Continuous_control_2.pdf'
+
+
+Note - if you do look through either the Jupyter notebook or the PDF, the 'solved versions' 
+are right at the bottom. I kept in all the iterations of adjusting hyper-parameters 
+to demonstrate the difficulty of hyper-parameter selection.
+
 
 After many iterations through different hyperparameters, I completed the task.
 Chart of moving average over 100 episodes is shown here:
-![Training results](/solved.jpg "Training results")
+[]("solved.jpg" "Training results")
 
-# Notes on 
+## Notes on training
+* The training took many iterations, cycling through different hyper-parameters
+* Of particular sensitivity were the learning rates for the actor and the critic, and the amount of noise to add to exploration (oun_theta)
+
+## Eventual hyper-parameter choices
+The final hyper-parameters were as follows:
+* Actor deep network - 2 fully connected layers of 256 then 128  
+* Critic deep network - 2 fully connected layers of 256 then 128 
+ - Critic network adds in the 4 actions before layer 2, to generate Q-values
+* Replay buffer - memory of 1e6, batch size of 128
+* gamma of 0.99
+* tau of 0.001
+* learning rates for both Actor and Critic of 3e-4
+* learning every 5 steps
+* did not use any weight decay
+* Noise generation - mu of 0, sigma of 0.2, theta of 0.05
+
+
+
+
 
